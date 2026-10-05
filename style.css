@@ -1,0 +1,82 @@
+body {
+    font-family: "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    letter-spacing: 0.3px;
+}
+
+/* Bubble-style headings */
+h1,
+h2,
+h3,
+.logo,
+.hero-badge,
+.big-button,
+.secondary-button,
+.nav-button,
+.feature-card button,
+.complete-button {
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;
+    font-weight: 900;
+}
+
+/* Extra rounded bubble look */
+h1 {
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #171020,
+        0 0 12px rgba(139, 92, 246, 0.25);
+}
+
+h2,
+h3 {
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    font-size: 25px;
+    letter-weight: 900;
+}
+
+/* Pure black main background */
+main {
+    background: #000000;
+}
+
+/* Cards stay dark but stand out from black */
+.feature-card,
+.scripture-card,
+.questions-card,
+.search-card,
+.quick-search,
+.verse-result,
+.level-card,
+.about-card,
+.stat-card {
+    background: #0b0b0f;
+    border-color: #24242d;
+}
+
+/* Bubble buttons */
+button {
+    border-radius: 18px;
+    font-family: "Arial Rounded MT Bold", "Trebuchet MS", Arial, sans-serif;
+    font-weight: 900;
+}
+
+.big-button,
+.complete-button,
+.search-row button {
+    border-radius: 22px;
+}
+
+/* Rounded input */
+.search-row input {
+    border-radius: 18px;
+}
+
+/* Rounded answer choices */
+.question label {
+    border-radius: 18px;
+}
