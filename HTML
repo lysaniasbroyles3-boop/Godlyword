@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOBOS Bible Study</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <div class="logo">
+            ✝ <span>BOBOS</span>
+            <small>Bible Study</small>
+        </div>
+
+        <nav>
+            <button class="nav-button active" data-page="home">Home</button>
+            <button class="nav-button" data-page="study">Bible Study</button>
+            <button class="nav-button" data-page="verses">Verse Lookup</button>
+            <button class="nav-button" data-page="progress">Progress</button>
+            <button class="nav-button" data-page="about">About</button>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HOME PAGE -->
+        <section id="home" class="page active">
+
+            <div class="hero">
+
+                <div class="hero-badge">
+                    ✨ Welcome to BOBOS
+                </div>
+
+                <h1>
+                    Grow Your Faith.
+                    <span>One Day at a Time.</span>
+                </h1>
+
+                <p>
+                    Read Scripture, answer questions, earn XP,
+                    and build your Bible knowledge.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button class="big-button" data-page="study">
+                        📖 Start Today's Study
+                    </button>
+
+                    <button class="secondary-button" data-page="verses">
+                        🔎 Look Up a Verse
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h2>Daily Bible Study</h2>
+                    <p>
+                        Read a passage and answer questions
+                        to complete today's study.
+                    </p>
+                    <button data-page="study">Start Study →</button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔎</div>
+                    <h2>Verse Lookup</h2>
+                    <p>
+                        Search for Bible verses using their
+                        book, chapter, and verse.
+                    </p>
+                    <button data-page="verses">Search Verses →</button>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h2>Earn XP</h2>
+                    <p>
+                        Complete studies and watch your
+                        Bible Study level increase.
+                    </p>
+                    <button data-page="progress">View Progress →</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BIBLE STUDY PAGE -->
+        <section id="study" class="page">
+
+            <div class="page-title">
+
+                <div>
+                    <span class="eyebrow">TODAY'S STUDY</span>
+
+                    <h1>Trust in the Lord</h1>
+
+                    <p>
+                        Today's lesson is about trusting God
+                        even when we don't understand everything.
+                    </p>
+                </div>
+
+                <div class="study-number">
+                    DAY<br>
+                    <strong>01</strong>
+                </div>
+
+            </div>
+
+
+            <div class="study-layout">
+
+                <div class="scripture-card">
+
+                    <div class="scripture-top">
+                        <span>📖 SCRIPTURE</span>
+                        <span>Proverbs 3:5-6</span>
+                    </div>
+
+                    <blockquote>
+                        "Trust in the Lord with all your heart
+                        and lean not on your own understanding;
+                        in all your ways acknowledge him,
+                        and he will make your paths straight."
+                    </blockquote>
+
+                    <div class="scripture-reference">
+                        Proverbs 3:5-6
+                    </div>
+
+                </div>
+
+
+                <div class="questions-card">
+
+                    <h2>📝 Check Your Understanding</h2>
+
+                    <p class="question-intro">
+                        Answer all three questions to complete
+                        today's study.
+                    </p>
+
+
+                    <form id="quiz">
+
+                        <div class="question">
+
+                            <h3>
+                                1. Who should we trust with all
+                                our heart?
+                            </h3>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q1"
+                                    value="correct"
+                                >
+                                The Lord
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q1"
+                                    value="wrong"
+                                >
+                                Only ourselves
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q1"
+                                    value="wrong"
+                                >
+                                Nobody
+                            </label>
+
+                        </div>
+
+
+                        <div class="question">
+
+                            <h3>
+                                2. What should we not lean on?
+                            </h3>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q2"
+                                    value="correct"
+                                >
+                                Our own understanding
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q2"
+                                    value="wrong"
+                                >
+                                God's Word
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q2"
+                                    value="wrong"
+                                >
+                                Prayer
+                            </label>
+
+                        </div>
+
+
+                        <div class="question">
+
+                            <h3>
+                                3. What does God promise to do?
+                            </h3>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q3"
+                                    value="correct"
+                                >
+                                Make our paths straight
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q3"
+                                    value="wrong"
+                                >
+                                Make us never have problems
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="q3"
+                                    value="wrong"
+                                >
+                                Give us everything we want
+                            </label>
+
+                        </div>
+
+
+                        <button class="complete-button" type="submit">
+                            ✓ Complete Study
+                        </button>
+
+                    </form>
+
+
+                    <div id="quiz-result"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- VERSE LOOKUP PAGE -->
+        <section id="verses" class="page">
+
+            <div class="page-title">
+
+                <div>
+                    <span class="eyebrow">BIBLE TOOLS</span>
+
+                    <h1>Verse Lookup</h1>
+
+                    <p>
+                        Find a verse from the BOBOS verse library.
+                    </p>
+                </div>
+
+                <div class="large-icon">
+                    🔎
+                </div>
+
+            </div>
+
+
+            <div class="search-card">
+
+                <h2>Search the Bible</h2>
+
+                <p>
+                    Try a reference such as
+                    <strong>John 3:16</strong>.
+                </p>
+
+                <div class="search-row">
+
+                    <input
+                        id="verse-input"
+                        type="text"
+                        placeholder="Enter verse reference..."
+                    >
+
+                    <button id="verse-search-button">
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-search">
+
+                <h2>Popular Verses</h2>
+
+                <div class="quick-buttons">
+
+                    <button data-verse="John 3:16">
+                        John 3:16
+                    </button>
+
+                    <button data-verse="Psalm 23:1">
+                        Psalm 23:1
+                    </button>
+
+                    <button data-verse="Proverbs 3:5">
+                        Proverbs 3:5
+                    </button>
+
+                    <button data-verse="Philippians 4:13">
+                        Philippians 4:13
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div id="verse-result" class="verse-result">
+
+                <div class="empty-icon">📖</div>
+
+                <h2>Your verse will appear here</h2>
+
+                <p>
+                    Search for a Bible reference above.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRESS PAGE -->
+        <section id="progress" class="page">
+
+            <div class="page-title">
+
+                <div>
+                    <span class="eyebrow">YOUR JOURNEY</span>
+
+                    <h1>Your Progress</h1>
+
+                    <p>
+                        Keep studying to level up.
+                    </p>
+                </div>
+
+                <div class="level-circle">
+                    <span>LEVEL</span>
+                    <strong id="level">1</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span>⭐</span>
+                    <p>XP</p>
+                    <strong id="xp">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>📖</span>
+                    <p>Studies Completed</p>
+                    <strong id="completed">0</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>🔥</span>
+                    <p>Study Streak</p>
+                    <strong id="streak">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="level-card">
+
+                <div class="level-header">
+                    <h2>Level Progress</h2>
+
+                    <span>
+                        <span id="current-xp">0</span> /
+                        <span id="next-xp">100</span> XP
+                    </span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+
+                <p id="level-message">
+                    Complete a study to earn XP!
+                </p>
+
+            </div>
+
+
+            <button class="big-button" data-page="study">
+                📖 Continue Studying
+            </button>
+
+        </section>
+
+
+        <!-- ABOUT PAGE -->
+        <section id="about" class="page">
+
+            <div class="about-card">
+
+                <div class="about-logo">✝</div>
+
+                <h1>About BOBOS</h1>
+
+                <p>
+                    BOBOS Bible Study is a simple way to make
+                    studying the Bible more interactive.
+                </p>
+
+                <div class="about-features">
+
+                    <div>📖 Daily Scripture</div>
+                    <div>📝 Bible Questions</div>
+                    <div>⭐ XP & Levels</div>
+                    <div>🔎 Verse Lookup</div>
+
+                </div>
+
+                <button class="big-button" data-page="home">
+                    ← Back Home
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-logo">
+            ✝ BOBOS Bible Study
+        </div>
+
+        <p>
+            Read • Learn • Grow
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
